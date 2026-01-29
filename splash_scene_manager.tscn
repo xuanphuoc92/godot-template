@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6b8wd2drka3k"]
+
+[ext_resource type="Script" uid="uid://b1ghoy06xsqac" path="res://splash_scene_manager.gd" id="1_18qlx"]
+[ext_resource type="Texture2D" uid="uid://rt1p536rp4h5" path="res://your-logo.png" id="2_ihev7"]
+[ext_resource type="Texture2D" uid="uid://d3qpi67ws2cmn" path="res://icon.svg" id="3_nerfp"]
+
+[node name="SplashSceneManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_18qlx")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect1" type="TextureRect" parent="CenterContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("2_ihev7")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="CenterContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("3_nerfp")
+expand_mode = 1
